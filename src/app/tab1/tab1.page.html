@@ -1,0 +1,32 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+    <ion-thumbnail slot="start">
+        <ion-img [src]="imgurl"></ion-img>
+    </ion-thumbnail>
+    <ion-card style="background: url({{imgurl}}) no-repeat; background-size: cover;margin:0;border-radius: 0; height: 230px;">
+
+        <ion-row class="center">
+            <ion-col class="ion-text-center">
+                <div>
+                    <h1>Where are you going?</h1>
+                    <ion-button color="danger">Rent a Car</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+    <!-- <img src="{{ imgurl }} " width="100% "> -->
+    <!-- <ion-header collapse="condense ">
+        <ion-toolbar>
+            <ion-title size="large ">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header> -->
+
+    <!-- <app-explore-container name="Tab 1 page "></app-explore-container> -->
+</ion-content>
