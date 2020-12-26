@@ -9,9 +9,25 @@ export class Tab1Page {
   imgurl:any;
   constructor() {
     
+  }  
+  supportSlider = {
+    spaceBetween: 10,
+    centeredSlides: true,
+    slidesPerView: 1.4,
+  }
+  carSlider = {
+    spaceBetween: 8,
+    centeredSlides: true,
+    slidesPerView: 1.1,
+  }
+  placeSlider = {
+    spaceBetween: 15,
+    centeredSlides: true,
+    slidesPerView: 1.4,
   }
   ngOnInit() {
-    this.imgurl = "https://cars.usnews.com/pics/size/640x420/static/images/article/202006/128503/216702_New_Volvo_XC40_-_exterior_640x420.jpg";
+    this.imgurl = "../assets/img/home-banner.jpg";
+    // this.customer_support_url = "../assests/img/.png";
   }
 
 }

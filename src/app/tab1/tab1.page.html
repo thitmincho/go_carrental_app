@@ -10,23 +10,133 @@
     <ion-thumbnail slot="start">
         <ion-img [src]="imgurl"></ion-img>
     </ion-thumbnail>
-    <ion-card style="background: url({{imgurl}}) no-repeat; background-size: cover;margin:0;border-radius: 0; height: 230px;">
-
+    <ion-card class="banner" style="background: url({{imgurl}}) no-repeat; background-size: cover; background-position: center;" >
         <ion-row class="center">
             <ion-col class="ion-text-center">
                 <div>
                     <h1>Where are you going?</h1>
-                    <ion-button color="danger">Rent a Car</ion-button>
+                    <ion-button class="primary-btn">Rent a Car</ion-button>
                 </div>
             </ion-col>
         </ion-row>
-    </ion-card>
-    <!-- <img src="{{ imgurl }} " width="100% "> -->
-    <!-- <ion-header collapse="condense ">
-        <ion-toolbar>
-            <ion-title size="large ">Tab 1</ion-title>
-        </ion-toolbar>
-    </ion-header> -->
+    </ion-card>    
 
-    <!-- <app-explore-container name="Tab 1 page "></app-explore-container> -->
+    <ion-card class="main-box">
+        <ion-card-header>
+          <img src="/assets/img/r1.png" class="r1">
+          <ion-card-title class="title">Go</ion-card-title>
+          <ion-card-subtitle class="subtitle">Rent A Car</ion-card-subtitle>          
+        </ion-card-header>
+    </ion-card>
+
+    <ion-slides [options]="supportSlider">
+      <ion-slide >
+        <ion-card class="support-box no-margin-hoz">          
+          <img src="/assets/svg/customer-support.svg">                  
+          <ion-card-title class="title">24/7 customer support</ion-card-title>        
+          <ion-card-content class="content">
+            Rest easy knowing that everyone in the Turo community is scareened, and 24/7 customer support and roadside assistance are just a click away.
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="support-box no-margin-hoz">
+          <img src="/assets/svg/transportation.svg">
+          <ion-card-title class="title">Endless options</ion-card-title>
+          <ion-card-content class="content">
+            Choose from hundreds of models you won’t find anywhere eles. Pick it up or get it delivered where you want it.
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="support-box no-margin-hoz">
+          <img src="/assets/svg/customer-support.svg">
+          <ion-card-title class="title">Drive confidently</ion-card-title>
+          <ion-card-content class="content">
+            Drive confidently with your choice of protection plans. All plans include insurance agency and physical damage protectin
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    <h5 class="carbox-title">You Might Like</h5>
+    <ion-slides [options]="carSlider">
+      <ion-slide>
+        <ion-card class="car-box no-margin-hoz">          
+          <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+          <ion-row>
+            <ion-col class="col-left">
+              <span class="name">Toyota</span>
+              <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+              <icon-button class="car-btn">Driver</icon-button>
+            </ion-col>
+            <ion-col class="col-right"> 
+              <span class="price">K4000</span> 
+              <span class="rate">Half Day</span>
+            </ion-col>
+          </ion-row>        
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="car-box no-margin-hoz">          
+            <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+            <ion-row>
+              <ion-col class="col-left">
+                <span class="name">Suzuki Ertiga</span>
+                <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+                <icon-button class="car-btn">Driver</icon-button>
+              </ion-col>
+              <ion-col class="col-right"> 
+                <span class="price">K4000</span> 
+                <span class="rate">Half Day</span>
+              </ion-col>
+            </ion-row> 
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="car-box no-margin-hoz">
+          <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+          <ion-row>
+            <ion-col class="col-left">
+              <span class="name">Toyota innova</span>
+              <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+              <icon-button class="car-btn">Driver</icon-button>
+            </ion-col>
+            <ion-col class="col-right"> 
+              <span class="price">K4000</span> 
+              <span class="rate">Half Day</span>
+            </ion-col>
+          </ion-row>      
+        </ion-card>
+      </ion-slide>
+    </ion-slides>    
+    <h3>10 Best Places to Visit in Myanmar</h3>
+    <ion-slides [options]="placeSlider">
+     <ion-slide>      
+       <ion-card class="place-box no-margin-hoz">
+         <ion-card-content class="no-padding">
+          <img src="/assets/img/bagan.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Bagan</ion-card-title>
+       </ion-card>     
+     </ion-slide>
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/bagan.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Bagan</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/bagan.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Bagan</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+
+    </ion-slides>
+    
+    
 </ion-content>

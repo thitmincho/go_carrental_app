@@ -1,0 +1,11 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="ionicon">
+<g clip-path="url(#clip0)">
+<path d="M9.5 16C13.0899 16 16 13.0899 16 9.5C16 5.91015 13.0899 3 9.5 3C5.91015 3 3 5.91015 3 9.5C3 13.0899 5.91015 16 9.5 16Z" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 18L14 14" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg>

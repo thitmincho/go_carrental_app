@@ -1,17 +1,102 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+      Trips
+    </ion-title>  
+  </ion-toolbar>  
+  <ion-toobar>
+    <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="type">
+      <ion-segment-button class="tab-title" value="current">
+        <ion-label>current</ion-label>
+      </ion-segment-button>
+      <ion-segment-button class="tab-title" value="past">
+        <ion-label>past</ion-label>
+      </ion-segment-button>
+    </ion-segment>  
+  </ion-toobar>  
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content [fullscreen]="true">  
+  <div [ngSwitch]="type">
+    <div *ngSwitchCase = "'current'" class="current tab">
+      <ion-row class="car-info divider" justify-content-center>
+        <ion-col>
+          <img src="assets/img/toyota-avanza.jpg" class="img-box">
+        </ion-col>
+        <ion-col size="7">
+          <h5 class="title">Toyota Avanza</h5>
+          <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        </ion-col>        
+      </ion-row>
+      <h6 class="list-title">Trip dates</h6>                
+        <ion-row class="divider">
+          <ion-col class="flex-col">
+              <img src="assets/svg/calendar.svg" class="icon">
+          </ion-col>
+          <ion-col size="10">
+            <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
+            <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
+          </ion-col>
+        </ion-row>  
+        <h6 class="list-title">Pickup & return</h6>                
+        <ion-row class="divider">
+          <ion-col class="flex-col">
+              <img src="assets/svg/map-pin.svg" class="icon">
+          </ion-col>
+          <ion-col size="10">
+            <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
+            <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
+          </ion-col>
+        </ion-row>  
+        <h6 class="list-title">Payment Detail</h6>                
+        <div class="divider">          
+            <p>Promo saved <span class="right-col">K0.000</span></p>
+            <p>Car hire fee (within yangon)<br>
+              x 2 day <span class="right-col">K16.000</span></p>
+            <p>Free additional driver x1 <span class="right-col">K0.000</span></p>
+            <p>Booster Seat x 1 <span class="right-col">K1.500</span></p>
+        </div>
+        <div class="divider">
+            <p><b>Total Price: <span class="right-col">K17,500</span></b></p>
+            <p>Please note, you will pay for the following items at pick-up:<b>Booster Seat x1.</b></p>
+            <ion-button class="primary-btn" color="primary">Extend my trip</ion-button>
+        </div>
+    </div>
+      
+    <div *ngSwitchCase = "'past'" class="past tab">      
+      <h6 class="list-title">Trip dates</h6>                
+        <ion-row class="divider">
+          <ion-col class="flex-col">
+              <img src="assets/svg/calendar.svg" class="icon">
+          </ion-col>
+          <ion-col size="10">
+            <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
+            <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
+          </ion-col>
+        </ion-row>  
+        <h6 class="list-title">Pickup & return</h6>                
+        <ion-row class="divider">
+          <ion-col class="flex-col">
+              <img src="assets/svg/map-pin.svg" class="icon">
+          </ion-col>
+          <ion-col size="10">
+            <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
+            <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
+          </ion-col>
+        </ion-row>  
+        <h6 class="list-title">Payment Detail</h6>                
+        <div class="divider">          
+            <p>Promo saved <span class="right-col">K0.000</span></p>
+            <p>Car hire fee (within yangon)<br>
+              x 2 day <span class="right-col">K16.000</span></p>
+            <p>Free additional driver x1 <span class="right-col">K0.000</span></p>
+            <p>Booster Seat x 1 <span class="right-col">K1.500</span></p>
+        </div>
+        <div class="divider">
+            <p><b>Total Price: <span class="right-col">K17,500</span></b></p>
+            <p>Please note, you will pay for the following items at pick-up:<b>Booster Seat x1.</b></p>
+            <ion-button class="primary-btn" color="primary">Extend my trip</ion-button>
+        </div>
+    </div>
+  </div>
 </ion-content>
