@@ -1,0 +1,30 @@
+
+ion-label{
+    padding: 0 9px;
+    --font-family: var(--font-roboto);
+    --font-size: 15px;
+    line-height: 20px;
+    color: var(--color-grey2) !important;
+}
+
+.header-img{
+    padding: 0 25px;
+}
+.profile{
+    padding: 10px 20px;
+    .label{
+        display: block;
+    }
+    .name{        
+        font-family: var(--font-roboto);;        
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .edit{     
+        color: var(--color-primary);
+        font-family: var(--font-roboto);       
+        font-size: 11px;
+        line-height: 14px;;
+    }
+    
+}

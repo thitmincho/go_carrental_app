@@ -1,5 +1,8 @@
-<ion-header [translucent]="true">
+<ion-header>
     <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button class="back-button"></ion-back-button>
+        </ion-buttons>        
         <ion-title>
             My Reservation
         </ion-title>
@@ -7,12 +10,104 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true">
-    <ion-header collapse="condense">
-        <ion-toolbar>
-            <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-    </ion-header>
+<ion-content>    
+        <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="type">
+            <ion-segment-button class="tab-title" value="within">
+            <ion-label>Within Yangon</ion-label>
+            </ion-segment-button>
+            <ion-segment-button class="tab-title" value="outside">
+            <ion-label>Outside Yangon</ion-label>
+            </ion-segment-button>
+            <ion-segment-button class="tab-title" value="other">
+            <ion-label>Other</ion-label>
+            </ion-segment-button>
+        </ion-segment>          
+        <div [ngSwitch]="type" class="tab-content">
+            <div *ngSwitchCase = "'within'" class="tab">                                                                     
+                  <ion-label>Rental Type</ion-label>
+                  <ion-select placeholder="Half Day">
+                    <ion-select-option value="half-day">Half Day</ion-select-option>
+                    <ion-select-option value="full-day">Full Day</ion-select-option>
+                  </ion-select>
+                
 
-    <app-explore-container name="Tab 2 page"></app-explore-container>
+                  <ion-label>Pick Up Location</ion-label>                  
+                  <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>                  
+                  <ion-label>Drop Off Location</ion-label>
+                  <ion-input></ion-input>
+                              
+                <ion-row class="divider">
+                  <ion-col>
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Pick Up</ion-card-title>
+                      </ion-card-header>
+                    
+                      <ion-card-content>
+                        Keep close to Nature's heart...
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  <ion-col>
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Drop Off</ion-card-title>
+                      </ion-card-header>
+                    
+                      <ion-card-content>
+                        Keep close to Nature's heart...
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                </ion-row>                  
+            </div>
+              
+            <div *ngSwitchCase = "'outside'" class="past tab">      
+              <h6 class="list-title">Trip dates</h6>                
+                <ion-row class="divider">
+                  <ion-col class="flex-col">
+                      <img src="assets/svg/calendar.svg" class="icon">
+                  </ion-col>
+                  <ion-col size="10">
+                    <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
+                    <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
+                  </ion-col>
+                </ion-row>  
+                <h6 class="list-title">Pickup & return</h6>                
+                <ion-row class="divider">
+                  <ion-col class="flex-col">
+                      <img src="assets/svg/map-pin.svg" class="icon">
+                  </ion-col>
+                  <ion-col size="10">
+                    <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
+                    <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
+                  </ion-col>
+                </ion-row>                  
+            </div>
+            <div *ngSwitchCase = "'other'" class="past tab">      
+              <h6 class="list-title">Trip dates</h6>                
+                <ion-row class="divider">
+                  <ion-col class="flex-col">
+                      <img src="assets/svg/calendar.svg" class="icon">
+                  </ion-col>
+                  <ion-col size="10">
+                    <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
+                    <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
+                  </ion-col>
+                </ion-row>  
+                <h6 class="list-title">Pickup & return</h6>                
+                <ion-row class="divider">
+                  <ion-col class="flex-col">
+                      <img src="assets/svg/map-pin.svg" class="icon">
+                  </ion-col>
+                  <ion-col size="10">
+                    <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
+                    <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
+                  </ion-col>
+                </ion-row>  
+                
+            </div>
+          </div>
 </ion-content>

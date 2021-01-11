@@ -1,6 +1,9 @@
 ion-segment{
     background: #FFFFFF;
 }
+ion-title{
+    text-align: center;
+}
 .tab-title{
     text-transform: capitalize;
     font-family: var(--font-roboto);
@@ -11,17 +14,7 @@ ion-segment{
     padding-left: 14px;
     padding-right: 14px;
 }
-.primary-btn{
-    text-transform: capitalize;
-    display: block;    
-    --padding-top: 14px;    
-    --padding-bottom: 14px;
-    --border-radius: 5px;
-}
-.divider{
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-grey5);
-}
+
 .right-col{    
    float: right;
    color: var(--color-grey2);

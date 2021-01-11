@@ -9,9 +9,18 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
-  },  {
+  },
+  {
     path: 'welcome',
     loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'changepassword',
+    loadChildren: () => import('./account/changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () => import('./account/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
   }
 
 ];

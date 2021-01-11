@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding form">
+  <div class="ion-text-center">
+      <img src="assets/img/profile.png" class="icon">        
+      <h4 class="m-0 p-5">Ko Zaw</h4>
+  </div>
+  <ion-label>First Name</ion-label>
+  <ion-input></ion-input>
+
+  <ion-label>Last Name</ion-label>
+  <ion-input placeholder="Address line 1"></ion-input>
+
+  <ion-label>Date of Birth</ion-label>
+  <ion-input placeholder="Address line 2"></ion-input>
+  
+  <ion-label>Current Address</ion-label>
+  <ion-row class="mb-16">
+    <ion-col size="7" class="ion-no-padding">
+      <ion-input placeholder="City"></ion-input>
+    </ion-col>
+    <ion-col class="ion-no-padding ml-14">
+      <ion-input placeholder="Postcode"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-input placeholder="State"></ion-input>
+  <ion-label>Phone Number</ion-label>
+  <ion-input></ion-input>
+  <ion-label>About Me</ion-label>
+  <ion-textarea type="text" rows="5" class="mb-25"></ion-textarea>
+  <ion-button class="primary-btn" color="primary" (click)="profile_tab()">Save</ion-button>
+</ion-content>

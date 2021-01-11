@@ -24,3 +24,108 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-title{
+    // text-align: center;    
+    color: var(--color-grey1);
+    font-family: var(--font-roboto);
+    font-size: 15px;
+    line-height: 20px;
+    img{
+        float: left;
+    }
+}
+h4{
+    color: var(--color-grey1);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+}
+.divider{
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-grey5);
+}
+.m-0{
+    margin: 0;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.py-10{
+    padding: 10px 0;
+}
+.px-28{
+    padding: 0 28px;
+}
+.px-15{
+    padding: 0 15px;
+}
+.mx-15{
+    margin: 15px 0;
+}
+.ml-14{
+    padding-left: 14px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mt-22{
+    margin-top: 22px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.box-45{
+    height: 45px;
+};
+
+.btn{   
+    display: block;
+    font-family: var(--font-roboto);    
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: inherit;        
+}
+.primary-btn{
+    text-transform: capitalize;
+    display: block;    
+    --padding-top: 14px;    
+    --padding-bottom: 14px;
+    --border-radius: 5px;
+}
+.secondary-btn{
+    font-family:  var(--font-roboto);    
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: inherit;
+    line-height: 22px;    
+    text-align: center;   
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    --border-radius: 5px;
+    margin-top: 16px;    
+    --padding: 10px 40px;
+    
+}
+
+.form{    
+    ion-label{
+        font-family: var(--font-roboto);
+        font-size: 15px;
+        line-height: 20px;
+        color: var(--color-grey2);
+        display: flex;
+        margin-top: 14px;
+        margin-bottom: 8px;
+    }
+    ion-input, ion-textarea{
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    
+}

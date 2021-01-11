@@ -1,0 +1,35 @@
+.tab-title{
+    font-family: var(--font-roboto);
+    color: var(--color-grey3);
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.tab-content{
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 5px;
+    margin: 0 15px;
+    padding: 15px;
+}
+.segment-button-checked{    
+    color: var(--color-white);
+    background: var(--color-primary);
+    --indicator-color : transparent !important; 
+}
+ion-segment{
+    margin: 20px 15px 0 15px;
+}
+ion-label{
+    font-family: var(--font-roboto);    
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;    
+}
+ion-input, ion-select{
+    margin: 10px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
