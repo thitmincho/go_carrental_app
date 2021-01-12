@@ -18,6 +18,9 @@ export class Tab4Page implements OnInit {
   editprofile(){
     this.router.navigate(['edit-profile']);
   }
+  loginRegister(){
+    this.router.navigate(['login-register']);
+  }
 
   ngOnInit() {
   }

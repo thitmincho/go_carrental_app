@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: 'tab1',
+    loadChildren: () => import('./tab1/tab1.module').then(m => m.Tab1PageModule)
+  },
+  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
@@ -21,7 +25,21 @@ const routes: Routes = [
   {
     path: 'edit-profile',
     loadChildren: () => import('./account/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
-  }
+  },
+  {
+    path: 'login-register',
+    loadChildren: () => import('./account/login-register/login-register.module').then( m => m.LoginRegisterPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./account/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./account/signup/signup.module').then( m => m.SignupPageModule)
+  },
+
+ 
+
 
 ];
 @NgModule({

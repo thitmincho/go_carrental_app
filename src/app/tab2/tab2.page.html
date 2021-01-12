@@ -10,7 +10,7 @@
 </ion-header>
 
 
-<ion-content>    
+  <ion-content [fullscreen]="true">    
         <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="type">
             <ion-segment-button class="tab-title" value="within">
             <ion-label>Within Yangon</ion-label>
@@ -22,92 +22,113 @@
             <ion-label>Other</ion-label>
             </ion-segment-button>
         </ion-segment>          
-        <div [ngSwitch]="type" class="tab-content">
-            <div *ngSwitchCase = "'within'" class="tab">                                                                     
+        <div [ngSwitch]="type">
+            <div *ngSwitchCase = "'within'" class="within tab">      
+                <div class="tab-content">                     
                   <ion-label>Rental Type</ion-label>
                   <ion-select placeholder="Half Day">
                     <ion-select-option value="half-day">Half Day</ion-select-option>
                     <ion-select-option value="full-day">Full Day</ion-select-option>
                   </ion-select>
-                
-
                   <ion-label>Pick Up Location</ion-label>                  
                   <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>                  
                   <ion-label>Drop Off Location</ion-label>
                   <ion-input></ion-input>
+                </div>
                               
-                <ion-row class="divider">
-                  <ion-col>
-                    <ion-card>
-                      <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                <ion-row class="calender-box">
+                  <img src="/assets/img/calender-arrow.png" class="arrow">
+                  <ion-col class="margin-right">
+                    <ion-card class="no-margin">
+                      <ion-card-header>                        
                         <ion-card-title>Pick Up</ion-card-title>
-                      </ion-card-header>
-                    
-                      <ion-card-content>
-                        Keep close to Nature's heart...
+                      </ion-card-header>                    
+                      <ion-card-content>                      
+                        <span class="date">02</span><span class="month">Dec</span>
+                        <span class="year">2021</span>                      
                       </ion-card-content>
+                      <div class="divider-top">
+                        <span class="time">10:00 AM</span>
+                      </div>
                     </ion-card>
                   </ion-col>
-                  <ion-col>
-                    <ion-card>
-                      <ion-card-header>
-                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-col  class="margin-left">
+                    <ion-card class="no-margin">
+                      <ion-card-header>                        
                         <ion-card-title>Drop Off</ion-card-title>
-                      </ion-card-header>
-                    
-                      <ion-card-content>
-                        Keep close to Nature's heart...
+                      </ion-card-header>                    
+                      <ion-card-content>                      
+                        <span class="date">03</span><span class="month">Dec</span>
+                        <span class="year">2021</span>                      
                       </ion-card-content>
+                      <div class="divider-top">
+                        <span class="time">10:00 AM</span>
+                      </div>
                     </ion-card>
-                  </ion-col>
-                </ion-row>                  
-            </div>
-              
-            <div *ngSwitchCase = "'outside'" class="past tab">      
-              <h6 class="list-title">Trip dates</h6>                
-                <ion-row class="divider">
-                  <ion-col class="flex-col">
-                      <img src="assets/svg/calendar.svg" class="icon">
-                  </ion-col>
-                  <ion-col size="10">
-                    <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
-                    <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
-                  </ion-col>
-                </ion-row>  
-                <h6 class="list-title">Pickup & return</h6>                
-                <ion-row class="divider">
-                  <ion-col class="flex-col">
-                      <img src="assets/svg/map-pin.svg" class="icon">
-                  </ion-col>
-                  <ion-col size="10">
-                    <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
-                    <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
-                  </ion-col>
-                </ion-row>                  
-            </div>
-            <div *ngSwitchCase = "'other'" class="past tab">      
-              <h6 class="list-title">Trip dates</h6>                
-                <ion-row class="divider">
-                  <ion-col class="flex-col">
-                      <img src="assets/svg/calendar.svg" class="icon">
-                  </ion-col>
-                  <ion-col size="10">
-                    <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
-                    <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span> 
-                  </ion-col>
-                </ion-row>  
-                <h6 class="list-title">Pickup & return</h6>                
-                <ion-row class="divider">
-                  <ion-col class="flex-col">
-                      <img src="assets/svg/map-pin.svg" class="icon">
-                  </ion-col>
-                  <ion-col size="10">
-                    <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
-                    <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span> 
-                  </ion-col>
+                  </ion-col>                  
                 </ion-row>  
                 
+                <ion-button class="primary-btn px-15">Search</ion-button>                
+            </div>
+              
+            <div *ngSwitchCase = "'outside'" class="outside tab">      
+              <div class="tab-content">                     
+                <ion-label>Pick Up City</ion-label>
+                <ion-select placeholder="Choose a City">
+                  <ion-select-option value="yangon">Yangon</ion-select-option>
+                  <ion-select-option value="mandalay">Mandalay</ion-select-option>
+                </ion-select>
+                <ion-label>Pick Up Location</ion-label>                  
+                <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>    
+                <ion-label>Drop Off City</ion-label>
+                <ion-select placeholder="Choose a City">
+                  <ion-select-option value="yangon">Yangon</ion-select-option>
+                  <ion-select-option value="mandalay">Mandalay</ion-select-option>
+                </ion-select>              
+                <ion-label>Drop Off City</ion-label>
+                <ion-input></ion-input>
+              </div>
+                            
+              <ion-row class="calender-box">
+                <img src="/assets/img/calender-arrow.png" class="arrow">
+                <ion-col class="margin-right">
+                  <ion-card class="no-margin">
+                    <ion-card-header>                        
+                      <ion-card-title>Pick Up</ion-card-title>
+                    </ion-card-header>                    
+                    <ion-card-content>                      
+                      <span class="date">02</span><span class="month">Dec</span>
+                      <span class="year">2021</span>                      
+                    </ion-card-content>
+                    <div class="divider-top">
+                      <span class="time">10:00 AM</span>
+                    </div>
+                  </ion-card>
+                </ion-col>
+                <ion-col  class="margin-left">
+                  <ion-card class="no-margin">
+                    <ion-card-header>                        
+                      <ion-card-title>Drop Off</ion-card-title>
+                    </ion-card-header>                    
+                    <ion-card-content>                      
+                      <span class="date">03</span><span class="month">Dec</span>
+                      <span class="year">2021</span>                      
+                    </ion-card-content>
+                    <div class="divider-top">
+                      <span class="time">10:00 AM</span>
+                    </div>
+                  </ion-card>
+                </ion-col>                  
+              </ion-row>  
+              
+              <ion-button class="primary-btn px-15">Search</ion-button>   
+            </div>
+            <div *ngSwitchCase = "'other'" class="other tab">
+              <div class="tab-content">
+                <p>For other destinations and urgent booking.
+                  Please contact us at <span>info@gocarrental.com</span> or 
+                  <span>09 123 412 304</span></p>
+              </div>
             </div>
           </div>
 </ion-content>

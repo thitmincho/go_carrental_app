@@ -10,8 +10,69 @@
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 0px 5px 5px 5px;
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
     padding: 15px;
+}
+.calender-box{
+    position: relative;
+    border-radius: 0px 5px 5px 5px;
+    margin: 0 15px;
+    .margin-right{
+        padding: 0 13px 0 0;
+    }
+    .margin-left{
+        padding: 0 0 0 13px;
+    }
+    .arrow{
+        z-index: 1;
+        position: absolute;
+        top: 50px;
+        left: 125px;        
+        width: 40px;
+    }
+    ion-card-header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: var(--color-primary);
+        ion-card-title{
+            color: #fff;
+            font-family: var(--font-roboto);
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;    
+        }
+    }
+    ion-card-content{
+        text-align: center;
+        font-family: var(--font-roboto);
+        padding-top: 20px;
+        .date{
+            color: var(--color-grey1);            
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 16px;            
+            text-transform: uppercase;
+        }
+        .month{
+            padding-left: 8px;
+            color: var(--color-grey1);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 22px;            
+            text-transform: uppercase;
+        }
+        .year{
+            display: block;
+            color: var(--color-grey2);
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;            
+        }        
+    }    
 }
 .segment-button-checked{    
     color: var(--color-white);
@@ -32,4 +93,15 @@ ion-input, ion-select{
     background: #FFFFFF;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+}
+.other{
+    color: var(--color-grey2);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    span{
+        color: var(--color-primary);
+    }
 }
