@@ -76,6 +76,9 @@ h4{
 .px-15{
     padding: 0 15px;
 }
+.pb-20{
+    padding-bottom: 20px;
+}
 .mx-15{
     margin: 15px 0;
 }
@@ -95,6 +98,7 @@ h4{
     height: 45px;
 };
 
+
 .btn{   
     display: block;
     font-family: var(--font-roboto);    
@@ -110,6 +114,7 @@ h4{
     --border-radius: 5px;
     margin-bottom: 10px;
 }
+
 .secondary-btn{
     font-family:  var(--font-roboto);    
     font-weight: 500;
@@ -121,6 +126,27 @@ h4{
     --border-radius: 5px;
     margin-top: 16px;    
     --padding: 10px 40px;    
+}
+.social-btn{
+    color: var(--color-grey4);
+    text-transform: inherit;
+    display: block;    
+    --padding-top: 20px;    
+    --padding-bottom: 20px;
+    --border-radius: 5px;
+    .icon{
+        width: 24px;
+        height: 24px;
+    }
+    p{        
+        color: var(--color-grey2);
+        font-family: var(--font-roboto);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        padding-left: 10px;
+    }   
 }
 
 .form{    

@@ -7,6 +7,45 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding form-content">
+  <ion-button color="grey4" fill="outline" class="social-btn">
+    <img src="assets/img/search.png" class="icon">
+    <p>Continue with Google</p>
+  </ion-button>
+  <ion-button color="grey4" fill="outline" class="social-btn">
+    <img src="assets/img/facebook.png" class="icon">
+    <p>Continue with Facebook</p>
+  </ion-button>
+
+<form class="ion-no-padding">  
+  <ion-item>
+    <ion-label position="floating" color="primary">First name</ion-label>
+    <ion-input type="text" class="no-padding form-control" required></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating" color="primary">Last name</ion-label>
+    <ion-input type="text" class="no-padding"></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating" color="primary">Email/Phone Number</ion-label>
+    <ion-input type="text" class="no-padding"></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating" color="primary">Password</ion-label>
+    <ion-input type="text" class="no-padding"></ion-input>
+  </ion-item>  
+  <div class="check-box">
+    <ion-checkbox class="term"></ion-checkbox>
+    <ion-label>Yes, send me deals, discounts, and updates!</ion-label>      
+  </div>  
+  <div class="check-box">
+    <ion-checkbox></ion-checkbox>
+    <ion-label>I agree to the terms of service and privacy policy</ion-label>              
+    <ion-label class="check-sec">View terms of service and privacy policy</ion-label>              
+  </div>
+  
+</form>
+<ion-button (click)="home()" class="primary-btn mx-15" shape="round"> Sign Up with email</ion-button>
+  
 
 </ion-content>

@@ -1,12 +1,35 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button class="back-button"></ion-back-button>
+      <ion-icon src="/assets/svg/logo.svg"></ion-icon>
     </ion-buttons>
     <ion-title>LogIn</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding form-content">
+  <ion-button color="grey4" fill="outline" class="social-btn">
+    <img src="assets/img/search.png" class="icon">
+    <p>Continue with Google</p>
+  </ion-button>
+  <ion-button color="grey4" fill="outline" class="social-btn">
+    <img src="assets/img/facebook.png" class="icon">
+    <p>Continue with Facebook</p>
+  </ion-button>
 
+  <form class="ion-no-padding">  
+  
+    <ion-item>
+      <ion-label position="floating" color="primary">Email/Phone Number</ion-label>
+      <ion-input type="text" class="no-padding"></ion-input>
+    </ion-item>  
+    <ion-item>
+      <ion-label position="floating" color="primary">Password</ion-label>
+      <ion-input type="text" class="no-padding"></ion-input>
+    </ion-item>  
+  
+    
+  </form>
+  <ion-button (click)="home()" class="primary-btn mx-15" shape="round"> Login with email</ion-button>
+  <p class="forgot" (click)="forgot_password()">Forgot password?</p>
 </ion-content>

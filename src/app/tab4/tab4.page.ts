@@ -21,6 +21,9 @@ export class Tab4Page implements OnInit {
   loginRegister(){
     this.router.navigate(['login-register']);
   }
+  faq(){
+    this.router.navigate(['faq']);
+  }
 
   ngOnInit() {
   }

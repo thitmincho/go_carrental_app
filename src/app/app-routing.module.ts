@@ -37,6 +37,14 @@ const routes: Routes = [
     path: 'signup',
     loadChildren: () => import('./account/signup/signup.module').then( m => m.SignupPageModule)
   },
+  {
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FaqPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./account/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
 
  
 
