@@ -21,8 +21,8 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  goBack(){
-    this.navCtrl.pop();
-  }
+  // goBack(){
+  //   this.navCtrl.pop();
+  // }
 
 }

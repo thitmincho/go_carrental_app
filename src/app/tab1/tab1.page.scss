@@ -72,6 +72,10 @@ h3 {
         font-size: 10px;         
     }
 }
+.supportSlider, .carSlider, .placeSlider{
+  margin-left: 15px;
+}
+
 .support-box{
     width: 230px;
     height: 164px;
@@ -111,6 +115,7 @@ h3 {
 .car-box{
   margin-top: 0;
   margin-bottom: 0;
+  box-shadow: none;
   .car-img{
     width: 282px;
     height: 153px;

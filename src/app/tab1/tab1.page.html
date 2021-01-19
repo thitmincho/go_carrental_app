@@ -29,37 +29,37 @@
         </ion-card-header>
     </ion-card>
 
-    <ion-slides [options]="supportSlider">
+    <ion-slides [options]="supportSlider" class="supportSlider">
       <ion-slide >
         <ion-card class="support-box no-margin-hoz">          
           <img src="/assets/svg/customer-support.svg">                  
-          <ion-card-title class="title">24/7 customer support</ion-card-title>        
+          <ion-card-title class="title">Distinct Service</ion-card-title>        
           <ion-card-content class="content">
-            Rest easy knowing that everyone in the Turo community is scareened, and 24/7 customer support and roadside assistance are just a click away.
+            Easily choose from large range of cars in one place and enjoy your trips in Myanmar
           </ion-card-content>
         </ion-card>
       </ion-slide>
       <ion-slide>
         <ion-card class="support-box no-margin-hoz">
           <img src="/assets/svg/transportation.svg">
-          <ion-card-title class="title">Endless options</ion-card-title>
+          <ion-card-title class="title">Broad Locations</ion-card-title>
           <ion-card-content class="content">
-            Choose from hundreds of models you won’t find anywhere eles. Pick it up or get it delivered where you want it.
+            Easily get reliable transport service within/outside Yangon city and for other destinations in Myanmar
           </ion-card-content>
         </ion-card>
       </ion-slide>
       <ion-slide>
         <ion-card class="support-box no-margin-hoz">
           <img src="/assets/svg/customer-support.svg">
-          <ion-card-title class="title">Drive confidently</ion-card-title>
+          <ion-card-title class="title">Correspondence</ion-card-title>
           <ion-card-content class="content">
-            Drive confidently with your choice of protection plans. All plans include insurance agency and physical damage protectin
+            Easily make booking and payment in one place by taking a few minutes
           </ion-card-content>
         </ion-card>
       </ion-slide>
     </ion-slides>
     <h5 class="carbox-title">You Might Like</h5>
-    <ion-slides [options]="carSlider">
+    <ion-slides [options]="carSlider" class="carSlider">
       <ion-slide>
         <ion-card class="car-box no-margin-hoz">          
           <img src="/assets/img/toyota-avanza.jpg" class="car-img">
@@ -78,7 +78,7 @@
       </ion-slide>
       <ion-slide>
         <ion-card class="car-box no-margin-hoz">          
-            <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+            <img src="/assets/img/suzuki-ertiga.jpg" class="car-img">
             <ion-row>
               <ion-col class="col-left">
                 <span class="name">Suzuki Ertiga</span>
@@ -93,11 +93,43 @@
         </ion-card>
       </ion-slide>
       <ion-slide>
+        <ion-card class="car-box no-margin-hoz">          
+            <img src="/assets/img/honda-mobilio.jpg" class="car-img">
+            <ion-row>
+              <ion-col class="col-left">
+                <span class="name">Honda Mobilio</span>
+                <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+                <icon-button class="car-btn">Driver</icon-button>
+              </ion-col>
+              <ion-col class="col-right"> 
+                <span class="price">K4000</span> 
+                <span class="rate">Half Day</span>
+              </ion-col>
+            </ion-row> 
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
         <ion-card class="car-box no-margin-hoz">
-          <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+          <img src="/assets/img/mitsubishi-xpandar.jpg" class="car-img">
           <ion-row>
             <ion-col class="col-left">
-              <span class="name">Toyota innova</span>
+              <span class="name">Mitsubishi Xpandar</span>
+              <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+              <icon-button class="car-btn">Driver</icon-button>
+            </ion-col>
+            <ion-col class="col-right"> 
+              <span class="price">K4000</span> 
+              <span class="rate">Half Day</span>
+            </ion-col>
+          </ion-row>      
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="car-box no-margin-hoz">
+          <img src="/assets/img/daihatsu-xenia.jpg" class="car-img">
+          <ion-row>
+            <ion-col class="col-left">
+              <span class="name">Daihatsu Xenia</span>
               <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
               <icon-button class="car-btn">Driver</icon-button>
             </ion-col>
@@ -110,10 +142,10 @@
       </ion-slide>
     </ion-slides>    
     <h3>10 Best Places to Visit in Myanmar</h3>
-    <ion-slides [options]="placeSlider">
+    <ion-slides [options]="placeSlider" class="placeSlider">
      <ion-slide>      
        <ion-card class="place-box no-margin-hoz">
-         <ion-card-content class="no-padding">
+         <ion-card-content>
           <img src="/assets/img/bagan.jpg" class="place-img">
          </ion-card-content>
          <ion-card-title>Bagan</ion-card-title>
@@ -122,17 +154,73 @@
      <ion-slide>
        <ion-card class="place-box no-margin-hoz">
         <ion-card-content>
-          <img src="/assets/img/bagan.jpg" class="place-img">
+          <img src="/assets/img/yangon.jpg" class="place-img">
          </ion-card-content>
-         <ion-card-title>Bagan</ion-card-title>
+         <ion-card-title>Yangon</ion-card-title>
        </ion-card>
      </ion-slide>     
      <ion-slide>
        <ion-card class="place-box no-margin-hoz">
         <ion-card-content>
-          <img src="/assets/img/bagan.jpg" class="place-img">
+          <img src="/assets/img/mandalay.jpg" class="place-img">
          </ion-card-content>
-         <ion-card-title>Bagan</ion-card-title>
+         <ion-card-title>Mandalay</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/inle-lake.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Inle Lake</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/ngapali.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Ngapali</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/mrauk-u.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Mrauk U</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/bago.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Bago</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/kyaiktiyo.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Kyaiktiyo</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/ngwe-saung.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Ngwe Saung</ion-card-title>
+       </ion-card>
+     </ion-slide>     
+     <ion-slide>
+       <ion-card class="place-box no-margin-hoz">
+        <ion-card-content>
+          <img src="/assets/img/pyinoo-lwin.jpg" class="place-img">
+         </ion-card-content>
+         <ion-card-title>Pyin Oo Lwin</ion-card-title>
        </ion-card>
      </ion-slide>     
 

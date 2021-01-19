@@ -12,18 +12,18 @@ export class Tab1Page {
   }  
   supportSlider = {
     spaceBetween: 10,
-    centeredSlides: true,
+    centeredSlides: false,
     slidesPerView: 1.4,
   }
   carSlider = {
     spaceBetween: 8,
-    centeredSlides: true,
-    slidesPerView: 1.1,
+    centeredSlides: false,
+    slidesPerView: 1.15,
   }
   placeSlider = {
     spaceBetween: 15,
-    centeredSlides: true,
-    slidesPerView: 1.4,
+    centeredSlides: false,
+    slidesPerView: 1.7,
   }
   ngOnInit() {
     this.imgurl = "../assets/img/home-banner.jpg";

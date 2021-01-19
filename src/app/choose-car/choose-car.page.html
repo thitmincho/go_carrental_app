@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Choose Car</ion-title>
+  </ion-toolbar>
+
+  <ion-row class="info-box ion-padding">    
+    <ion-col size="7">
+      <span>Yangon International Airport...</span>
+      <span>Shwedagon Pagoda Yangon...</span>
+    </ion-col>
+    <ion-col size="3">
+      <span>Dec 2, 10:00</span>
+      <span>Dec 3, 10:00</span>
+    </ion-col>
+    <ion-col size="2">
+      <p class="edit" (click)=tab2()>Edit</p>
+    </ion-col>
+  </ion-row>  
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-row class="like-box">    
+    <ion-col size="2">
+      <img src="/assets/img/like.png" class="arrow">
+    </ion-col>
+    <ion-col size="10">
+      <span>Don’t stress: you can cancel your trip for
+        free, up to 24 hours before it starts.</span>     
+    </ion-col>    
+  </ion-row>  
+  <ion-card class="car-box no-margin-hoz">          
+    <img src="/assets/img/toyota-avanza.jpg" class="car-img">
+    <ion-row>
+      <ion-col class="col-left">
+        <span class="name">Toyota</span>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        <icon-button class="car-btn">Driver</icon-button>
+      </ion-col>
+      <ion-col class="col-right"> 
+        <span class="price">K16000</span> 
+        <span class="rate">Price for 2 days</span>
+      </ion-col>
+    </ion-row>        
+  </ion-card>
+  <ion-card class="car-box no-margin-hoz">          
+    <img src="/assets/img/suzuki-ertiga.jpg" class="car-img">
+    <ion-row>
+      <ion-col class="col-left">
+        <span class="name">Suzuki Ertiga</span>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        <icon-button class="car-btn">Driver</icon-button>
+      </ion-col>
+      <ion-col class="col-right"> 
+        <span class="price">K16000</span> 
+        <span class="rate">Price for 2 days</span>
+      </ion-col>
+    </ion-row> 
+  </ion-card>
+  <ion-card class="car-box no-margin-hoz">          
+    <img src="/assets/img/honda-mobilio.jpg" class="car-img">
+    <ion-row>
+      <ion-col class="col-left">
+        <span class="name">Honda Mobilio</span>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        <icon-button class="car-btn">Driver</icon-button>
+      </ion-col>
+      <ion-col class="col-right"> 
+        <span class="price">K16000</span> 
+        <span class="rate">Price for 2 days</span>
+      </ion-col>
+    </ion-row> 
+  </ion-card>
+  <ion-card class="car-box no-margin-hoz">
+    <img src="/assets/img/mitsubishi-xpandar.jpg" class="car-img">
+    <ion-row>
+      <ion-col class="col-left">
+        <span class="name">Mitsubishi Xpandar</span>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        <icon-button class="car-btn">Driver</icon-button>
+      </ion-col>
+      <ion-col class="col-right"> 
+        <span class="price">K16000</span> 
+        <span class="rate">Price for 2 days</span>
+      </ion-col>
+    </ion-row>      
+  </ion-card>
+  <ion-card class="car-box no-margin-hoz">
+    <img src="/assets/img/daihatsu-xenia.jpg" class="car-img">
+    <ion-row>
+      <ion-col class="col-left">
+        <span class="name">Daihatsu Xenia</span>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+        <icon-button class="car-btn">Driver</icon-button>
+      </ion-col>
+      <ion-col class="col-right"> 
+        <span class="price">K16000</span> 
+        <span class="rate">Price for 2 days</span>
+      </ion-col>
+    </ion-row>      
+  </ion-card>
+
+</ion-content>

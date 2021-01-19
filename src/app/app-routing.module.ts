@@ -29,7 +29,8 @@ const routes: Routes = [
   {
     path: 'login-register',
     loadChildren: () => import('./account/login-register/login-register.module').then( m => m.LoginRegisterPageModule)
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./account/login/login.module').then( m => m.LoginPageModule)
   },
@@ -44,8 +45,16 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     loadChildren: () => import('./account/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },  {
+    path: 'choose-car',
+    loadChildren: () => import('./choose-car/choose-car.module').then( m => m.ChooseCarPageModule)
+  },
+  {
+    path: 'car-detail',
+    loadChildren: () => import('./car-detail/car-detail.module').then( m => m.CarDetailPageModule)
   },
 
+ 
  
 
 

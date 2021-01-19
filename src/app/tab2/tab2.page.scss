@@ -10,13 +10,13 @@
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     border-radius: 0px 5px 5px 5px;
-    margin: 0 15px 20px 15px;
-    padding: 15px;
+    // margin: 0 15px 20px 15px;
+    padding: 20px 15px;
 }
 .calender-box{
     position: relative;
     border-radius: 0px 5px 5px 5px;
-    margin: 0 15px;
+    margin: 15px 0;
     .margin-right{
         padding: 0 13px 0 0;
     }
@@ -25,10 +25,14 @@
     }
     .arrow{
         z-index: 1;
+        width: 40px;        
+        overflow: auto;
+        margin: auto;
         position: absolute;
-        top: 50px;
-        left: 125px;        
-        width: 40px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;        
     }
     ion-card-header{
         padding-top: 5px;
@@ -80,7 +84,8 @@
     --indicator-color : transparent !important; 
 }
 ion-segment{
-    margin: 20px 15px 0 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 ion-label{
     font-family: var(--font-roboto);    
@@ -104,4 +109,7 @@ ion-input, ion-select{
     span{
         color: var(--color-primary);
     }
+}
+.primary-btn{
+    margin: 20px 0;
 }
