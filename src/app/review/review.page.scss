@@ -1,0 +1,51 @@
+
+ion-card{
+    padding: 15px;
+    margin: 20px 0;
+}
+p{
+    font-family: var(--font-roboto);
+    font-size: 13px;
+    line-height: 16px;    
+}
+h5{
+    text-align: center;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    color: var(--color-grey1);
+}
+.emot-box{
+    text-align: center;
+ span{
+    font-family: var(--font-roboto);
+    display: block;
+    font-size: 8px;
+    line-height: 14px;
+    color: var(--color-grey1);
+ } 
+}
+
+  
+.rating-box{
+    .star {
+        font-size: 20px;
+        color: #C4C4C4;
+        margin:0 5px;
+      }
+      .filled {
+        color: var(--color-primary);
+      }
+    p{
+        font-family: var(--color-roboto);
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--color-grey1);
+        margin: 0;
+    }
+    .rating{
+        text-align: right;
+        padding: 0;
+    }
+}

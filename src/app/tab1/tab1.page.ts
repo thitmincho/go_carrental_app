@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   imgurl:any;
-  constructor() {
+  constructor(private router:Router) {
     
   }  
   supportSlider = {
@@ -26,8 +27,10 @@ export class Tab1Page {
     slidesPerView: 1.7,
   }
   ngOnInit() {
-    this.imgurl = "../assets/img/home-banner.jpg";
-    // this.customer_support_url = "../assests/img/.png";
+    this.imgurl = "../assets/img/home-banner.jpg";  
+  }
+  carDetail(){
+    this.router.navigate(['car-detail']);
   }
 
 }

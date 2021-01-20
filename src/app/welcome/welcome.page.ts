@@ -23,7 +23,7 @@ export class WelcomePage implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.routes.navigateByUrl('tabs');  
-    }, 5000);
+    }, 95000);
     
   }
 

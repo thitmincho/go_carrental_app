@@ -1,9 +1,142 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>car-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Toyota Avaza</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">    
+  <div class="slide-box">
+    <img src="/assets/img/mitsubishi-xpandar.jpg" class="car-img">
+    <div class="slide-nav">
+      <span class="nav">1 of 14</span>
+    </div>
+    
+  </div>
+  <div class="car-box divider">
+    
+    <span class="name">Toyota</span>
+    <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>   
+  </div>
+  <ion-row class="divider">
+    <ion-col>
+    <div class="car-info">
+      <img src="/assets/icon/safety-seat.png">
+      <span>5 seats</span>
+    </div>
+    </ion-col>
+    <ion-col>
+    <div class="car-info">
+      <img src="/assets/icon/car-door.png">
+      <span>4 doors</span>
+    </div>
+    </ion-col>
+    <ion-col>
+      <div class="car-info">
+      <img src="/assets/icon/gas-station.png">
+      <span>Gas (Premium)</span>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="car-info">
+      <img src="/assets/icon/biofuel.png">
+      <span>22 MPG</span>
+    </div>
+    </ion-col>
+  </ion-row>
+  <div class="divider">
+    <h5>Price Rate for Within Yangon</h5>
+    <ion-row  class="price-box">
+      <ion-col size="1">
+        <img src="/assets/icon/clock.png">
+      </ion-col>
+      <ion-col size="7">
+        <h4>Half Day</h4>
+      </ion-col>
+      <ion-col size="4">
+        <h4 class="price">K4,000</h4>
+        <span class="hour">max 5 hours</span>
+      </ion-col>
+    </ion-row> 
+    <ion-row  class="price-box">
+      <ion-col size="1">
+        <img src="/assets/icon/clock.png">
+      </ion-col>
+      <ion-col size="7">
+        <h4>Full Day</h4>
+      </ion-col>
+      <ion-col size="4">
+        <h4 class="price">K8,000</h4>
+        <span class="hour">max 5 hours</span>
+      </ion-col>
+    </ion-row> 
+    <ion-row  class="price-box">
+      <ion-col size="1">
+        <img src="/assets/icon/calendar.png">
+      </ion-col>
+      <ion-col size="7">
+        <h4>Monthly</h4>
+      </ion-col>
+      <ion-col size="4">
+        <h4 class="price">K240,000</h4>        
+      </ion-col>
+    </ion-row> 
+    <p class="price-info"><span>Half day/Full day</span> can be extended by 1 hour with additional 
+      charges of K5,000</p>
+    <p class="price-info"><span>Monthly option</span> can be extended with an additional charge 
+      of K50,000 for each extra day</p>
+  </div> 
+  <div class="divider">
+    <h5>Price Rate for Outside Yangon</h5>
+    <ion-row  class="price-box">
+      <ion-col size="1">
+        <img src="/assets/icon/clock.png">
+      </ion-col>
+      <ion-col size="7">
+        <h4>Daily</h4>
+      </ion-col>
+      <ion-col size="4">
+        <h4 class="price">K20,000</h4>        
+      </ion-col>
+    </ion-row> 
+  </div>
+  <div class="divider fuel-box">
+    <h5>Fuel policy: Full to Full</h5>
+    <p>This is the best value option.</p>
+  </div>
+  <div class="divider descrip-box">
+    <h5>Description</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>  
+  <div class="divider review-box">  
+  <ion-row >
+    <ion-col size="1">
+      <img src="/assets/icon/message-square.png">
+    </ion-col>
+    <ion-col size="10">
+      <h5>Reviews</h5>
+    </ion-col>
+    <ion-col size="1">
+      <img src="/assets/svg/chevron-down.svg" (click)=review()>
+    </ion-col>
+  </ion-row>
+</div>
+  
 </ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="5">
+      <div class="footer-price">
+        <p>K16,000</p>
+        <span>2 Days</span>
+      </div>
+    </ion-col>
+    <ion-col size="7">
+      <ion-button class="primary-btn" (click)=extra()>Add Extra</ion-button> 
+    </ion-col>
+  </ion-row>
+</ion-footer>

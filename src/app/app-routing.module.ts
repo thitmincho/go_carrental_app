@@ -53,6 +53,14 @@ const routes: Routes = [
     path: 'car-detail',
     loadChildren: () => import('./car-detail/car-detail.module').then( m => m.CarDetailPageModule)
   },
+  {
+    path: 'review',
+    loadChildren: () => import('./review/review.module').then( m => m.ReviewPageModule)
+  },
+  {
+    path: 'extra',
+    loadChildren: () => import('./extra/extra.module').then( m => m.ExtraPageModule)
+  },
 
  
  

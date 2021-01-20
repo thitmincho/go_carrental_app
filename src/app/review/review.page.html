@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Reviews</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>  
+  <p>We’d like to hear your review! as we aim  to provide 
+    the best experiences to our valued customers, your
+    thoughts matter to us.</p>
+  <h5>App Feedback</h5>
+  <ion-row>
+    <ion-col>
+      <div class="emot-box">
+        <img src="/assets/svg/angry-emoticon-face.svg">
+        <span>Very Poor</span>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="emot-box">
+        <img src="/assets/svg/sad.svg">
+        <span>Poor</span>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="emot-box">
+        <img src="/assets/svg/straight.svg">
+        <span>Ok</span>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="emot-box">
+        <img src="/assets/svg/angel.svg">
+        <span>Good</span>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="emot-box">
+        <img src="/assets/svg/goofy.svg">
+        <span>Very Good</span>
+      </div>
+    </ion-col>
+  </ion-row>
+  <h5>Rental Experience</h5>
+    <div class="rating-box">
+      <ion-row>
+        <ion-col>
+          <p>Customer Service</p>    
+        </ion-col>
+        <ion-col class="rating">
+          <ngb-rating  [max]="5" [(rate)]="currentRate">
+            <ng-template let-fill="fill">
+              <span class="star color{{rating}}" [class.filled]="fill === 100">&#9733;</span>
+            </ng-template>
+          </ngb-rating>  
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Transparency of costs</p>    
+        </ion-col>
+        <ion-col class="rating">
+          <ngb-rating  [max]="5" [(rate)]="currentRate">
+            <ng-template let-fill="fill">
+              <span class="star color{{rating}}" [class.filled]="fill === 100">&#9733;</span>
+            </ng-template>
+          </ngb-rating>  
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Value of money</p>    
+        </ion-col>
+        <ion-col class="rating">
+          <ngb-rating  [max]="5" [(rate)]="currentRate">
+            <ng-template let-fill="fill">
+              <span class="star color{{rating}}" [class.filled]="fill === 100">&#9733;</span>
+            </ng-template>
+          </ngb-rating>  
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Quality of vehicle</p>    
+        </ion-col>
+        <ion-col class="rating">
+          <ngb-rating  [max]="5" [(rate)]="currentRate">
+            <ng-template let-fill="fill">
+              <span class="star color{{rating}}" [class.filled]="fill === 100">&#9733;</span>
+            </ng-template>
+          </ngb-rating>  
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p>Availability of vehicle</p>    
+        </ion-col>
+        <ion-col class="rating">
+          <ngb-rating  [max]="5" [(rate)]="currentRate">
+            <ng-template let-fill="fill">
+              <span class="star color{{rating}}" [class.filled]="fill === 100">&#9733;</span>
+            </ng-template>
+          </ngb-rating>  
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+  <ion-button class="primary-btn" (click)=review()>Submit</ion-button> 
+
+</ion-content>

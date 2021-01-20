@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Extras</ion-title>    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="seat-box">
+    <ion-row>
+      <ion-col size="3">        
+        <img src="assets/svg/info-circle-fill.svg" class="info-circle">
+        <img src="assets/svg/baby-car-seat.svg" class="seat-img">        
+      </ion-col>
+      <ion-col>
+        <p class="title">Child Toddler Seat</p> 
+        <span class="price">1500ks per hire</span>
+        <ion-row class="quantity">
+          <ion-icon name="remove-circle" (click)=minus()></ion-icon>          
+          <input type="text" [value]="quantity">
+          <ion-icon name="add-circle" (click)=plus()></ion-icon>
+        </ion-row>        
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card class="seat-box">
+    <ion-row>
+      <ion-col size="3">        
+        <img src="assets/svg/info-circle-fill-active.svg" class="info-circle">
+        <img src="assets/svg/car-seat.svg" class="seat-img">        
+      </ion-col>
+      <ion-col>
+        <p class="title">Booster Seat</p> 
+        <span class="price">1500ks per hire</span>
+        <ion-row class="quantity">
+          <ion-icon name="remove-circle" (click)=minus()></ion-icon>          
+          <input type="text" [value]="quantity">
+          <ion-icon name="add-circle" (click)=plus()></ion-icon>
+        </ion-row>        
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card class="seat-box">
+    <ion-row>
+      <ion-col size="3">        
+        <img src="assets/svg/info-circle-fill.svg" class="info-circle">
+        <img src="assets/svg/baby-car-seat-2.svg" class="seat-img">        
+      </ion-col>
+      <ion-col>
+        <p class="title">Infant Child Seat</p> 
+        <span class="price">1500ks per hire</span>
+        <ion-row class="quantity">
+          <ion-icon name="remove-circle" (click)=minus()></ion-icon>          
+          <input type="text" [value]="quantity">
+          <ion-icon name="add-circle" (click)=plus()></ion-icon>
+        </ion-row>        
+      </ion-col>
+    </ion-row>
+  </ion-card>
+    <p class="content">
+      Availability of these extras is not always guaranteed and
+      prices are subject to change if paying at the desk. In most
+      countries, child seats are mandatory for children under 12
+      years old or 135cm in height.
+    </p>
+  
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="5">
+      <div class="footer-price">
+        <p>K16,000</p>
+        <span>2 Days</span>
+      </div>
+    </ion-col>
+    <ion-col size="7">
+      <ion-button class="primary-btn" (click)=loginSignup()>Continue</ion-button> 
+    </ion-col>
+  </ion-row>
+</ion-footer>

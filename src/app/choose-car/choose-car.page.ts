@@ -17,5 +17,8 @@ export class ChooseCarPage implements OnInit {
   tab2(){
     this.router.navigate(['tab2']);
   }
+  CarDetail(){
+    this.router.navigate(['car-detail']);
+  }
 
 }

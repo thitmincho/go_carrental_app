@@ -6,7 +6,7 @@
     <ion-title>Choose Car</ion-title>
   </ion-toolbar>
 
-  <ion-row class="info-box ion-padding">    
+  <ion-row class="info-box">    
     <ion-col size="7">
       <span>Yangon International Airport...</span>
       <span>Shwedagon Pagoda Yangon...</span>
@@ -31,7 +31,7 @@
         free, up to 24 hours before it starts.</span>     
     </ion-col>    
   </ion-row>  
-  <ion-card class="car-box no-margin-hoz">          
+  <ion-card class="car-box no-margin-hoz" (click)=CarDetail()>          
     <img src="/assets/img/toyota-avanza.jpg" class="car-img">
     <ion-row>
       <ion-col class="col-left">
@@ -45,7 +45,7 @@
       </ion-col>
     </ion-row>        
   </ion-card>
-  <ion-card class="car-box no-margin-hoz">          
+  <ion-card class="car-box no-margin-hoz" (click)=CarDetail()>
     <img src="/assets/img/suzuki-ertiga.jpg" class="car-img">
     <ion-row>
       <ion-col class="col-left">
@@ -59,7 +59,7 @@
       </ion-col>
     </ion-row> 
   </ion-card>
-  <ion-card class="car-box no-margin-hoz">          
+  <ion-card class="car-box no-margin-hoz" (click)=CarDetail()>
     <img src="/assets/img/honda-mobilio.jpg" class="car-img">
     <ion-row>
       <ion-col class="col-left">
@@ -73,7 +73,7 @@
       </ion-col>
     </ion-row> 
   </ion-card>
-  <ion-card class="car-box no-margin-hoz">
+  <ion-card class="car-box no-margin-hoz" (click)=CarDetail()>
     <img src="/assets/img/mitsubishi-xpandar.jpg" class="car-img">
     <ion-row>
       <ion-col class="col-left">
@@ -87,7 +87,7 @@
       </ion-col>
     </ion-row>      
   </ion-card>
-  <ion-card class="car-box no-margin-hoz">
+  <ion-card class="car-box no-margin-hoz" (click)=CarDetail()>
     <img src="/assets/img/daihatsu-xenia.jpg" class="car-img">
     <ion-row>
       <ion-col class="col-left">
