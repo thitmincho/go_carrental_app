@@ -1,62 +1,41 @@
-ion-segment{
-    background: #FFFFFF;
-}
-ion-title{
-    text-align: center;
-}
-.tab-title{
-    text-transform: capitalize;
-    font-family: var(--font-roboto);
-    font-size: 13px;
-    line-height: 16px;
-}
-.tab{
-    padding-left: 14px;
-    padding-right: 14px;
-}
-
 .right-col{    
    float: right;
    color: var(--color-grey2);
 }
-.icon{
-    background: #FFFFFF;
-    border: 1px solid var(--color-grey3);
-    border-radius: 50%;
-    padding: 7px;
+ion-input{
+    border: 1px solid #BDBDBD;
     box-sizing: border-box;
+    font-family: var(--font-roboto);    
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-grey3);
 }
-
-.past{
+.apply-btn{
+    --border-radius: 3px;    
+}
+.booking{
     display: inline-block;
     font-family: var(--font-roboto);
     font-size: 13px;
     line-height: 16px;
     color: var(--color-grey1);
-    .list-title{
-        font-family: var(--font-roboto);
-        font-size: 15px;
-        line-height: 16px;
-        color: var(--color-grey1);
-    }   
-    .calender{
-        display: inline-block;
-        font-family: Roboto;
-        font-size: 13px;
-        line-height: 16px;
-        color: var(--color-grey1);
+    .icon{
+        border: 1px solid var(--color-grey3);
+        border-radius: 50%;
+        padding: 7px;
+        box-sizing: border-box;
     }
-    .label{
-        color: var(--color-grey3);
-        padding-right: 5px;
-    }    
-}
-.current{
-    display: inline-block;
-    font-family: var(--font-roboto);
-    font-size: 13px;
-    line-height: 16px;
-    color: var(--color-grey1);
+    .change{
+        display: block;
+        font-family: var(--font-roboto);
+        color: var(--color-primary);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: right;
+        text-transform: uppercase;
+    }
     .list-title{
         font-family: var(--font-roboto);
         font-size: 15px;
@@ -96,4 +75,30 @@ ion-title{
         color: var(--color-grey3);
         padding-right: 5px;
     }    
+    .total{
+        margin-top: 10px;
+    }
+}
+.payment{
+    font-family: var(--font-roboto);
+    color: var(--color-grey1);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+}
+.payment-box{
+    margin: 0;
+    ion-radio{
+        margin-right: 10px;
+    }
+    ion-label{
+        font-family: var(--font-roboto);
+        color: var(--color-grey2);
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    .img-box{
+        margin-right: 10px;
+    }
 }

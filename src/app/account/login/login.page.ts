@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
 export class LoginPage implements OnInit {
 
   constructor(private router:Router) { }
+  booking() {
+    this.router.navigate(['booking']);
+  }
 
   forgot_password(){
     this.router.navigate(['forgot-password']);

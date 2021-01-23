@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class="back-button"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Your Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="booking ion-padding">
+    <ion-row class="car-info divider" justify-content-center>
+      <ion-col class="no-padding">
+        <img src="assets/img/toyota-avanza.jpg" class="img-box">
+      </ion-col>
+      <ion-col size="7" class="ml-14">
+        <h5 class="title">Toyota Avanza</h5>
+        <span class="rate">4.74</span> <img src="/assets/svg/rate.svg"><span class="rate">(96 trips)</span>
+      </ion-col>
+    </ion-row>
+    <h6 class="list-title">Trip dates</h6>
+    <ion-row class="divider">
+      <ion-col class="flex-col no-padding">
+        <img src="assets/svg/calendar.svg" class="icon">
+      </ion-col>
+      <ion-col size="8" class="no-padding">
+        <span class="calender"><span class="label">Start:</span>Wed, Dec 2, 10:00 AM</span>
+        <span class="calender"><span class="label">End:</span>Thu, Dec 3, 10:00 AM</span>
+      </ion-col>
+      <ion-col size="2" class="no-padding">
+        <span class="change" (click)=tab2()>Change</span>        
+      </ion-col>
+    </ion-row>
+    <h6 class="list-title">Pickup & return</h6>
+    <ion-row class="divider">
+      <ion-col class="flex-col no-padding">
+        <img src="assets/svg/map-pin.svg" class="icon">
+      </ion-col>
+      <ion-col size="8" class="no-padding">
+        <span class="calender"><span class="label">Pickup:</span>Yangon International Airport</span>
+        <span class="calender"><span class="label">Return:</span>Shwedagon Pagoda</span>
+      </ion-col>
+      <ion-col size="2" class="no-padding">
+        <span class="change" (click)=tab2()>Change</span>
+      </ion-col>
+    </ion-row>
+    <h6 class="list-title">Payment Detail</h6>
+    <div class="divider">
+      <p>Promo saved <span class="right-col">K0.000</span></p>
+      <p>Car hire fee (within yangon)<br>
+        x 2 day <span class="right-col">K16.000</span></p>
+      <p>Free additional driver x1 <span class="right-col">K0.000</span></p>
+      <p>Booster Seat x 1 <span class="right-col">K1.500</span></p>
+    </div>
+    <div class="divider">
+      <p class="total"><b>Total Price: <span class="right-col">K17,500</span></b></p>
+      <ion-row class="car-info divider" justify-content-center>
+        <ion-col class="no-padding">
+          <p>Do you want to add extra seat?</p>
+        </ion-col>
+        <ion-col size="3" class="no-padding">
+          <span class="change" (click)=tab2()>Add Extra</span>
+        </ion-col>
+      </ion-row>
+    </div>
+    <!-- <IonItemDivider></IonItemDivider> -->
+    <ion-row>
+      <ion-col size="7">
+        <ion-input type="text" class="no-padding" placeholder="Enter Promo Code"></ion-input>
+      </ion-col>
+      <ion-col class="no-padding">
+        <ion-button class="primary-btn apply-btn" color="medium">Apply</ion-button>
+      </ion-col>
+    </ion-row>
+    <p class="payment mx-15">Select Payment Method</p>
+    <ion-card class="payment-box">
+      <ion-radio-group>
+        <ion-item lines="none">
+          <ion-radio></ion-radio>
+          <ion-label text-right>Visa/ Master</ion-label>
+          <img src="assets/img/cardpayment.png" class="img-box">
+        </ion-item>      
+        <ion-item lines="none">
+          <ion-radio></ion-radio>
+          <ion-label text-right>Bank Transfer</ion-label>
+          <img src="assets/img/bank-transfer.png">
+        </ion-item>      
+        <ion-item lines="none">
+          <ion-radio></ion-radio>
+          <ion-label text-right>Cash on Arrival</ion-label>
+          <img src="assets/img/receive-icon.png" class="img-box">
+        </ion-item>      
+    </ion-radio-group>
+    </ion-card>      
+    <ion-button class="primary-btn mt-22" color="primary" (click)=paymentSuccess()>Pay K16,000</ion-button>    
+  </div>
+</ion-content>

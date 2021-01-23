@@ -61,6 +61,18 @@ const routes: Routes = [
     path: 'extra',
     loadChildren: () => import('./extra/extra.module').then( m => m.ExtraPageModule)
   },
+  {
+    path: 'booking',
+    loadChildren: () => import('./booking/booking.module').then( m => m.BookingPageModule)
+  },
+  {
+    path: 'payment-success',
+    loadChildren: () => import('./payment-success/payment-success.module').then( m => m.PaymentSuccessPageModule)
+  },
+  {
+    path: 'my-reservation',
+    loadChildren: () => import('./my-reservation/my-reservation.module').then( m => m.MyReservationPageModule)
+  },
 
  
  
