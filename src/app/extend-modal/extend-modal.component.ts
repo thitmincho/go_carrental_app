@@ -1,5 +1,7 @@
+import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModalController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-extend-modal',
@@ -7,8 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./extend-modal.component.scss'],
 })
 export class ExtendModalComponent implements OnInit {
+  
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public modalCtrl: ModalController) { }
 
   quantity: number = 1;
   i = 1
@@ -24,8 +27,12 @@ export class ExtendModalComponent implements OnInit {
   }
 
   ngOnInit() {}
-  booking() {
+  booking() {    
     this.router.navigate(['booking']);
+    this.modalCtrl.dismiss();
+  }
+  goBack() {
+    this.modalCtrl.dismiss();
   }
 
 }

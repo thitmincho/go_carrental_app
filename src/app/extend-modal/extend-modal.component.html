@@ -1,4 +1,4 @@
-<ion-content class="ion-padding">
+<div class="extend-box">
   <ion-card class="seat-box">
     <ion-row>
       <ion-col size="3">
@@ -32,15 +32,16 @@
         </ion-row>
       </ion-col>
     </ion-row>
-  </ion-card>
+  </ion-card>  
   <ion-row>
     <ion-col>
-      <ion-button class="primary-btn cancel-btn" color="primary" fill="outline" (click)=showModal()>Cancel</ion-button>
+      <ion-button class="primary-btn cancel-btn" color="primary" fill="outline" (click)=goBack()>Cancel</ion-button>
     </ion-col>
     <ion-col>
       <ion-button class="primary-btn" (click)="booking()" >Confirm</ion-button>
     </ion-col>
   </ion-row>
-</ion-content>
+</div>
+
 
 

@@ -1,12 +1,14 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "go_carrental_app",
+  "appName": "Go Rent A Car",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 0,
+      "launchAutoHide": true,
+      "backgroundColor": "#ffffffff"
     }
   },
   "cordova": {}

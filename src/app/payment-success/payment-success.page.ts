@@ -12,8 +12,6 @@ export class PaymentSuccessPage implements OnInit {
 
   ngOnInit() {
   }
-  tab3(){
-    this.router.navigate(['tab3']);
-  }
+
 
 }
