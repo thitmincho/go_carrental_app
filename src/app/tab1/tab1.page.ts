@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -11,7 +12,8 @@ export class Tab1Page {
   constructor(private router:Router) {
     
   }  
-  supportSlider = {
+  supportSlider = {      
+    // initialSlide: 1,
     spaceBetween: 10,
     centeredSlides: false,
     slidesPerView: 1.4,
@@ -31,6 +33,9 @@ export class Tab1Page {
   }
   carDetail(){
     this.router.navigate(['car-detail']);
+  }
+  tab2(){
+    this.router.navigate(['tab2']);
   }
 
 }

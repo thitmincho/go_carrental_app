@@ -75,6 +75,15 @@ h3 {
 .supportSlider, .carSlider, .placeSlider{
   margin-left: 15px;
 }
+.supportSlider ion-slide{
+  width: 230px !important;
+}
+.carSlider ion-slide{
+  width: 285px !important;
+}
+.placeSlider ion-slide{
+  width: 190px !important;
+}
 
 .support-box{
     width: 230px;
@@ -93,6 +102,7 @@ h3 {
         font-size: 15px;
         line-height: 16px;
         color: #000000;
+        margin-top: 10px;
     }
     .content{
         color: var(--color-black);
@@ -194,3 +204,4 @@ h3 {
     text-align: center;
   }
 }
+

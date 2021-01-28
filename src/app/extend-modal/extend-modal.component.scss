@@ -1,0 +1,51 @@
+.seat-box{    
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0;            
+    .info-circle{        
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        z-index: 1;
+    }
+    .seat-img{
+        position: absolute;
+        left: 50%;       
+        top: 35%;        
+    }
+    .title{
+        font-family: var(--font-roboto);
+        color: var(--color-grey1);
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 0;
+    }
+    .price{
+        font-family: var(--font-roboto);
+        font-size: 11px;
+        line-height: 14px;
+        color: var(--color-grey2);
+    }
+    .quantity{    
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;        
+    }
+    input{
+        text-align: center;
+        width: 25px;
+        border-width: 0;
+    }
+    ion-icon{
+        color: var(--color-primary);
+        font-size: 24px;        
+    } 
+}
+.cancel-btn{
+    --padding-bottom: 18px;
+    --padding-top: 18px;
+}
+.extend-box{
+    padding: 15px 15px 0 15px;
+}

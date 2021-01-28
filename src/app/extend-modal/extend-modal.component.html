@@ -1,0 +1,47 @@
+<div class="extend-box">
+  <ion-card class="seat-box">
+    <ion-row>
+      <ion-col size="3">
+        <img src="assets/svg/info-circle-fill.svg" class="info-circle">
+        <img src="assets/svg/clock.svg" class="seat-img">
+      </ion-col>
+      <ion-col>
+        <p class="title">Extra Hour</p>
+        <span class="price">K4,000 per hour (Max 5 hours)</span>
+        <ion-row class="quantity">
+          <ion-icon name="remove-circle" (click)=minus()></ion-icon>
+          <input type="text" [value]="quantity">
+          <ion-icon name="add-circle" (click)=plus()></ion-icon>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card class="seat-box">
+    <ion-row>
+      <ion-col size="3">
+        <img src="assets/svg/info-circle-fill.svg" class="info-circle">
+        <img src="assets/svg/clock.svg" class="seat-img">
+      </ion-col>
+      <ion-col>
+        <p class="title">Extra Day</p>
+        <span class="price">K8,000 per day (Max 10 hours)</span>
+        <ion-row class="quantity">
+          <ion-icon name="remove-circle" (click)=minus()></ion-icon>
+          <input type="text" [value]="quantity">
+          <ion-icon name="add-circle" (click)=plus()></ion-icon>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card>  
+  <ion-row>
+    <ion-col>
+      <ion-button class="primary-btn cancel-btn" color="primary" fill="outline" (click)=goBack()>Cancel</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button class="primary-btn" (click)="booking()" >Confirm</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+
+
+
