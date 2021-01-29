@@ -191,3 +191,6 @@ h4{
 .event-detail-container{
     display: none;
 }
+.table-bordered> tbody> tr > td, .table-bordered > thead> tr> th, .table-bordered{
+    border: 0 !important;
+}
