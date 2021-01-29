@@ -183,3 +183,11 @@ h4{
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
 }
+.calendar-modal{    
+   --height: 550px;
+   --width: 90%;
+   --border-radius: 10px !important;   
+}
+.event-detail-container{
+    display: none;
+}

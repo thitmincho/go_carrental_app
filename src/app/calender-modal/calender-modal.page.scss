@@ -1,0 +1,33 @@
+ion-content{
+    padding: 15px;
+}
+h2{
+    margin: 0;
+}
+
+.border-right{
+    border-right: 1px solid #E0E0E0;
+}
+.pickup-box{
+    text-align: center;
+    span{
+        font-family: var(--font-roboto);
+        color: var(--color-primary);
+        font-size: 10px;
+        line-height: 16px;        
+        text-transform: uppercase;
+    }
+    ion-datetime{
+        font-family: var(--font-roboto);  
+        color: var(--color-grey2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 22px;
+        padding: 0;
+    }
+}
+.cancel-btn{
+    --padding-bottom: 18px;
+    --padding-top: 18px;
+}

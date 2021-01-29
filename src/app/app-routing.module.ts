@@ -81,7 +81,11 @@ const routes: Routes = [
   {
     path: 'my-reservation',
     loadChildren: () => import('./my-reservation/my-reservation.module').then( m => m.MyReservationPageModule)
+  },  {
+    path: 'calender-modal',
+    loadChildren: () => import('./calender-modal/calender-modal.module').then( m => m.CalenderModalPageModule)
   },
+
 
  
  

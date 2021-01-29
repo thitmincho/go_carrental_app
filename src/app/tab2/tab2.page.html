@@ -53,7 +53,7 @@
                     </ion-card>
                 </ion-col>
                 <ion-col class="margin-left">
-                    <ion-card class="no-margin">
+                    <ion-card class="no-margin" (click)="openCalendar()">
                         <ion-card-header>
                             <ion-card-title>Drop Off</ion-card-title>
                         </ion-card-header>
@@ -67,6 +67,8 @@
                     </ion-card>
                 </ion-col>
             </ion-row>
+
+            
 
             <ion-button class="primary-btn" (click)=ChooseCar()>Search</ion-button>
         </div>
@@ -92,7 +94,7 @@
             <ion-row class="calender-box">
                 <img src="/assets/img/calender-arrow.png" class="arrow">
                 <ion-col class="margin-right">
-                    <ion-card class="no-margin">
+                    <ion-card class="no-margin" (click)="openCalendar()">
                         <ion-card-header>
                             <ion-card-title>Pick Up</ion-card-title>
                         </ion-card-header>
@@ -106,7 +108,7 @@
                     </ion-card>
                 </ion-col>
                 <ion-col class="margin-left">
-                    <ion-card class="no-margin">
+                    <ion-card class="no-margin" (click)="openCalendar()">
                         <ion-card-header>
                             <ion-card-title>Drop Off</ion-card-title>
                         </ion-card-header>
