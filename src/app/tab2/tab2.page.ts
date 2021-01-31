@@ -12,11 +12,22 @@ import { CalenderModalPage } from '../calender-modal/calender-modal.page';
 })
 export class Tab2Page {
   type:string;
+  today:any;
+  tmr:any;
+  tdat:any;
 
   constructor(private router: Router,private modalCtrl: ModalController) {}
 
   ngOnInit(){
-    this.type='within'
+    this.today= new Date();
+    
+    this.tmr = new Date(this.today);
+    this.tmr.setDate(this.tmr.getDate() + 1);
+    
+    this.tdat = new Date(this.today);
+    this.tdat.setDate(this.tdat.getDate() + 2);
+
+    this.type='within';
   }
   segmentChanged(ev: any) {
     console.log('Segment changed', ev);
