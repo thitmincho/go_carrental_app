@@ -35,7 +35,7 @@ export class Tab1Page {
     this.router.navigate(['car-detail']);
   }
   tab2(){
-    this.router.navigate(['tab2']);
+    this.router.navigate(['/tabs/tab2']);
   }
 
 }
