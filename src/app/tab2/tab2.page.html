@@ -44,8 +44,8 @@
                             <ion-card-title>Pick Up</ion-card-title>
                         </ion-card-header>
                         <ion-card-content>
-                            <span class="date">02</span><span class="month">Mar</span>
-                            <span class="year">2021</span>
+                            <span class="date">{{ tmr | date: 'dd' }}</span><span class="month">{{ tmr | date: 'MMM' }}</span>
+                            <span class="year">{{ tmr | date: 'yyyy' }}</span>
                         </ion-card-content>
                         <div class="divider-top">
                             <span class="time">10:00 AM</span>
@@ -58,8 +58,8 @@
                             <ion-card-title>Drop Off</ion-card-title>
                         </ion-card-header>
                         <ion-card-content>
-                            <span class="date">03</span><span class="month">Mar</span>
-                            <span class="year">2021</span>
+                            <span class="date">{{ tdat | date: 'dd' }}</span><span class="month">{{ tdat | date: 'MMM' }}</span>
+                            <span class="year">{{ tdat | date: 'yyyy' }}</span>
                         </ion-card-content>
                         <div class="divider-top">
                             <span class="time">10:00 AM</span>
@@ -68,7 +68,7 @@
                 </ion-col>
             </ion-row>
 
-            
+
 
             <ion-button class="primary-btn" (click)=ChooseCar()>Search</ion-button>
         </div>
@@ -99,8 +99,8 @@
                             <ion-card-title>Pick Up</ion-card-title>
                         </ion-card-header>
                         <ion-card-content>
-                            <span class="date">02</span><span class="month">Mar</span>
-                            <span class="year">2021</span>
+                            <span class="date">{{ tmr | date: 'dd' }}</span><span class="month">{{ tmr | date: 'MMM' }}</span>
+                            <span class="year">{{ tmr | date: 'yyyy' }}</span>
                         </ion-card-content>
                         <div class="divider-top">
                             <span class="time">10:00 AM</span>
@@ -113,8 +113,8 @@
                             <ion-card-title>Drop Off</ion-card-title>
                         </ion-card-header>
                         <ion-card-content>
-                            <span class="date">03</span><span class="month">Mar</span>
-                            <span class="year">2021</span>
+                            <span class="date">{{ tdat | date: 'dd' }}</span><span class="month">{{ tdat | date: 'MMM' }}</span>
+                            <span class="year">{{ tdat | date: 'yyyy' }}</span>
                         </ion-card-content>
                         <div class="divider-top">
                             <span class="time">10:00 AM</span>
