@@ -47,36 +47,4 @@ export class Tab2Page {
     await modal.present();
   }
 
-  // Old Calendar
-  // async openCalendar() {
-  //   const options: CalendarModalOptions = {
-  //     // pickMode: 'range',
-  //     // title: "Date Range",
-  //     canBackwardsSelected: true
-  //   };
-  
-  //   const myCalendar = await this.modalCtrl.create({
-  //     component: CalendarModal,
-  //     cssClass: 'calendar-modal',
-  //     backdropDismiss: false,
-  //     componentProps: { options }
-  //   });
-  
-  //   myCalendar.present();
-  
-  //   myCalendar.onDidDismiss().then((result) => {
-  //     if (result.data) {
-  //       let event = result.data;
-  //       const from: CalendarResult = event.from;
-  //       const to: CalendarResult = event.to;
-  //       // this.order.all(from.string+","+to.string).subscribe((data)=>{
-  //       //   if(data["message"]=="Done"){
-  //       //     this.ordersList=data['data'];
-  //       //   }
-  //       // });
-       
-        
-  //     }
-  //   });
-  // }  
 }

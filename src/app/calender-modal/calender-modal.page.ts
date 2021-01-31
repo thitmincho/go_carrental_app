@@ -10,6 +10,11 @@ import { CalendarComponent } from 'ionic2-calendar';
   styleUrls: ['./calender-modal.page.scss'],
 })
 export class CalenderModalPage implements OnInit {
+  type: string;
+  today: any;
+  tmr: any;
+  tdat: any;
+
   eventSource = [];
   viewTitle: string;
   calendar = {
@@ -31,6 +36,13 @@ export class CalenderModalPage implements OnInit {
   }
 
   ngOnInit() {
+    this.today = new Date();
+
+    this.tmr = new Date(this.today);
+    this.tmr.setDate(this.tmr.getDate() + 1);
+
+    this.tdat = new Date(this.today);
+    this.tdat.setDate(this.tdat.getDate() + 2);
   }
   next() {
     console.log("next");

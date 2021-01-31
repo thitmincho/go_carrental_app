@@ -3,13 +3,13 @@
     <ion-col class="border-right">
       <div class="pickup-box">
         <span>pick up</span>
-        <h4>Mar 02</h4>
+        <h4>{{ tmr | date: 'MMM' }} {{ tmr | date: 'dd' }}</h4>
       </div>
     </ion-col>
     <ion-col>
       <div class="pickup-box">
         <span>Drop Off</span>
-        <h4>Mar 08</h4>
+        <h4>{{ tdat | date: 'MMM' }} {{ tdat | date: 'dd' }}</h4>
       </div>
     </ion-col>
   </ion-row>
