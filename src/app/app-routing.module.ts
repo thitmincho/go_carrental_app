@@ -79,12 +79,13 @@ const routes: Routes = [
     loadChildren: () => import('./payment-success/payment-success.module').then( m => m.PaymentSuccessPageModule)
   },
   {
-    path: 'my-reservation',
-    loadChildren: () => import('./my-reservation/my-reservation.module').then( m => m.MyReservationPageModule)
-  },  {
     path: 'calender-modal',
     loadChildren: () => import('./calender-modal/calender-modal.module').then( m => m.CalenderModalPageModule)
+  },  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
+
 
 
  

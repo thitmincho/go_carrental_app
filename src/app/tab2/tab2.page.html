@@ -30,10 +30,16 @@
                     <ion-select-option value="half-day">Half Day</ion-select-option>
                     <ion-select-option value="full-day">Full Day</ion-select-option>
                 </ion-select>
-                <ion-label>Pick Up Location</ion-label>
-                <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>
+                <ion-label>Pick Up Location</ion-label>                
+                <ion-item>
+                    <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>                    
+                    <img src="/assets/svg/map-pin.svg" (click)="map()">
+                </ion-item>
                 <ion-label>Drop Off Location</ion-label>
-                <ion-input></ion-input>
+                <ion-item>
+                    <ion-input> <i class="icon ion-ios-telephone"></i></ion-input>
+                    <img src="/assets/svg/map-pin.svg" (click)="map()">
+                </ion-item>                
             </div>
 
             <ion-row class="calender-box">

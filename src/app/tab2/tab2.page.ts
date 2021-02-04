@@ -35,6 +35,9 @@ export class Tab2Page {
   ChooseCar(){
     this.router.navigate(['choose-car']);
   } 
+  map(){
+    this.router.navigate(['map']);
+  } 
 
 
   async openCalendar(){
